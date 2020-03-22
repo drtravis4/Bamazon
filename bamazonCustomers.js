@@ -45,7 +45,7 @@ function displayProducts() {
 
                        
                        connection.query("update ?? set ?? = ? where ?? = ? ",
-                       ["products","stock_quantity",newquantity,"item_id"],function(error,results){
+                       ["products","stock_quantity",newquantity,"item_id",userInput.itemID],function(error,results){
                            displayProducts()
                        })
 
