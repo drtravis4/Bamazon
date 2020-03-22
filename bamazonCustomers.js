@@ -45,7 +45,7 @@ function displayProducts() {
 
                        
                        connection.query("update ?? set ?? = ? where ?? = ? ",
-                       ["products","stock_quantity",newquantity,"item_id",userI https://zoom.us/j/441983976nput.itemID],function(error,results){
+                       ["products","stock_quantity",newquantity,"item_id"],function(error,results){
                            displayProducts()
                        })
 
